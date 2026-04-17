@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter, Playfair_Display } from "next/font/google";
@@ -6,6 +6,7 @@ import MobileNav from "./components/MobileNav";
 import BottomNav from "./components/BottomNav";
 import AdmissionModal from "./components/AdmissionModal";
 import ApplyButton from "./components/ApplyButton";
+import PWARegister from "./components/PWARegister";
 import "./globals.css";
 
 const inter = Inter({
@@ -54,6 +55,13 @@ export const metadata: Metadata = {
     description:
       "One of Hyderabad's best CBSE schools in Attapur — Pre-KG to Class XII. Admissions open 2026-27. Call 040-29701555.",
   },
+  manifest: "/manifest.webmanifest",
+  applicationName: "OLIVEMOUNT Global School",
+  appleWebApp: {
+    capable: true,
+    title: "OLIVEMOUNT",
+    statusBarStyle: "default",
+  },
   icons: {
     icon: [
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
@@ -67,6 +75,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#07172a",
 };
 
 export default function RootLayout({
@@ -113,6 +127,8 @@ export default function RootLayout({
 
           {/* Mobile bottom nav — hidden on desktop via CSS */}
           <BottomNav />
+
+          <PWARegister />
 
           {/* Admission enquiry modal — triggered by Apply buttons sitewide */}
           <AdmissionModal />
