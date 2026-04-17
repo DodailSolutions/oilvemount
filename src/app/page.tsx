@@ -326,6 +326,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── ABOUT US ─────────────────────────────────────────── */}
+      <section className="section section-alt" aria-labelledby="about-home-heading">
+        <div className="container">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
+            <span className="eyebrow">About Us</span>
+            <h2 id="about-home-heading">A values-led school where children learn, grow, and thrive</h2>
+            <p className="section-sub">
+              OLIVEMOUNT Global School, Attapur combines strong CBSE academics with personal care,
+              character building, and future-ready learning for every child.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal variant="fade-up" delay={80} className="about-cta-card">
+            <span className="eyebrow">The OLIVEMOUNT Story</span>
+            <h2>Discover the vision, mission, and culture behind our school</h2>
+            <p>
+              From Pre-KG to Class XII, we nurture confident learners through a safe campus,
+              dedicated educators, and a holistic approach that balances excellence with values.
+            </p>
+            <div className="about-actions about-actions-centered">
+              <Link href="/about" className="button">Know More</Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ── 5 C's INFOGRAPHIC ────────────────────────────────── */}
       <section className="section fivecs-section" aria-labelledby="fivecs-heading">
         <div className="container">
