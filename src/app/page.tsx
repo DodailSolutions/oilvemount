@@ -491,7 +491,7 @@ export default function HomePage() {
                       src={n.image}
                       alt={n.title}
                       fill
-                      sizes="(max-width: 860px) 100vw, 30vw"
+                      sizes="(max-width: 860px) 100vw, 136px"
                       style={{ objectFit: "cover" }}
                     />
                     <span className={`news-badge ${n.badgeClass}`}>{n.category}</span>
