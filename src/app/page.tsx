@@ -3,6 +3,7 @@ import Image from "next/image";
 import FiveCs from "./components/FiveCs";
 import ApplyButton from "./components/ApplyButton";
 import TestimonialsCarousel from "./components/TestimonialsCarousel";
+import ScrollReveal from "./components/ScrollReveal";
 
 const trustSignals = [
   { value: "CBSE", label: "Board Affiliated", note: "Aff. No: 3630314" },
@@ -326,14 +327,14 @@ export default function HomePage() {
       {/* ── 5 C's INFOGRAPHIC ────────────────────────────────── */}
       <section className="section fivecs-section" aria-labelledby="fivecs-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">The OLIVEMOUNT Approach</span>
             <h2 id="fivecs-heading">Five Pillars That Shape Every CBSE Learner at OLIVEMOUNT</h2>
             <p className="section-sub">
               Our 5&nbsp;C&apos;s framework goes beyond marks — building the mindset, values,
               and life skills that set Hyderabad&apos;s top students apart from the rest.
             </p>
-          </div>
+          </ScrollReveal>
           <FiveCs />
         </div>
       </section>
@@ -341,11 +342,11 @@ export default function HomePage() {
       {/* ── ACADEMIC STAGES ──────────────────────────────────── */}
       <section className="section section-alt" aria-labelledby="stages-heading">
         <div className="container">
-          <div className="section-heading">
+          <ScrollReveal variant="fade-up" className="section-heading">
             <span className="eyebrow">Academic Journey</span>
             <h2 id="stages-heading">CBSE Academic Pathways from Pre-KG to Class XII</h2>
-          </div>
-          <div className="stages-grid">
+          </ScrollReveal>
+          <ScrollReveal variant="fade-up" delay={100} stagger className="stages-grid">
             {programmes.map((p) => (
               <article key={p.number} className="stage-card">
                 <span className="stage-num" aria-hidden="true">{p.number}</span>
@@ -356,21 +357,21 @@ export default function HomePage() {
                 </div>
               </article>
             ))}
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* ── FACILITIES ───────────────────────────────────────── */}
       <section className="section section-alt" aria-labelledby="facilities-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Campus Life</span>
             <h2 id="facilities-heading">Our Facilities</h2>
             <p className="section-sub">
               Purpose-built spaces that spark curiosity, creativity, and hands-on learning every day.
             </p>
-          </div>
-          <div className="facilities-grid">
+          </ScrollReveal>
+          <ScrollReveal variant="fade-up" delay={80} stagger className="facilities-grid">
             {facilities.map((f) => (
               <Link key={f.name} href="/facilities" className="facility-card">
                 <div className="facility-thumb">
@@ -387,7 +388,7 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
+          </ScrollReveal>
           <div className="facilities-cta">
             <Link href="/facilities" className="button button-secondary">Browse All Facilities</Link>
           </div>
@@ -397,10 +398,10 @@ export default function HomePage() {
       {/* ── ALIGN YOUR GOALS — DUAL CTA ──────────────────────── */}
       <section className="section" aria-labelledby="align-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Start to Success</span>
             <h2 id="align-heading">Align Your Goals With OLIVEMOUNT School</h2>
-          </div>
+          </ScrollReveal>
           <div className="dual-cta-grid">
             {/* Card 1 — Careers */}
             <Link href="/careers" className="dual-cta-card">
@@ -441,13 +442,13 @@ export default function HomePage() {
       {/* ── NEWS & EVENTS ────────────────────────────────────── */}
       <section className="section section-alt" aria-labelledby="news-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Stay Updated</span>
             <h2 id="news-heading">News &amp; Events</h2>
             <p className="section-sub">
               Celebrations, achievements, and milestones from across the OLIVEMOUNT community.
             </p>
-          </div>
+          </ScrollReveal>
 
           <div className="news-layout">
             {/* ── Featured card ── */}
@@ -533,14 +534,14 @@ export default function HomePage() {
       {/* ── GALLERY PREVIEW ──────────────────────────────────── */}
       <section className="section" aria-labelledby="gallery-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Campus Moments</span>
             <h2 id="gallery-heading">Life at OLIVEMOUNT</h2>
             <p className="section-sub">
               A glimpse into the vibrant events, celebrations, and everyday moments that make our campus special.
             </p>
-          </div>
-          <div className="gallery-grid">
+          </ScrollReveal>
+          <ScrollReveal variant="zoom-in" delay={60} stagger className="gallery-grid">
             {galleryItems.map((g) => (
               <Link key={g.label} href="/gallery" className="gallery-item">
                 <div className="gallery-thumb">
@@ -557,7 +558,7 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
+          </ScrollReveal>
           <div className="gallery-cta">
             <Link href="/gallery" className="button button-secondary">View Full Gallery</Link>
           </div>
@@ -567,14 +568,14 @@ export default function HomePage() {
       {/* ── BLOG PREVIEW ─────────────────────────────────────── */}
       <section className="section section-alt" aria-labelledby="blog-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Insights &amp; Stories</span>
             <h2 id="blog-heading">From Our Blog</h2>
             <p className="section-sub">
               Perspectives on parenting, learning, and school life — written by our educators and community.
             </p>
-          </div>
-          <div className="blog-grid">
+          </ScrollReveal>
+          <ScrollReveal variant="fade-up" delay={80} stagger className="blog-grid">
             {blogPosts.map((b) => (
               <Link
                 key={b.title}
@@ -608,7 +609,7 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
+          </ScrollReveal>
           <div className="blog-cta">
             <Link href="/blogs" className="button button-secondary">Read All Articles</Link>
           </div>
@@ -618,13 +619,13 @@ export default function HomePage() {
       {/* ── TESTIMONIALS ──────────────────────────────────────── */}
       <section className="section section-testimonials" aria-labelledby="testimonials-heading">
         <div className="container">
-          <div className="section-heading centered">
+          <ScrollReveal variant="fade-up" className="section-heading centered">
             <span className="eyebrow">Parent Stories</span>
             <h2 id="testimonials-heading">Hear From Our OLIVEMOUNT Families</h2>
             <p className="section-sub">
               Real experiences, in their own words — from parents who chose OLIVEMOUNT for their children.
             </p>
-          </div>
+          </ScrollReveal>
           <TestimonialsCarousel />
         </div>
       </section>
