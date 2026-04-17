@@ -898,6 +898,51 @@ h1, h2 { font-family: var(--font-display); }
 .c-card:nth-child(5) { animation-delay: 0.45s; }
 
 /* ══════════════════════════════════════════════════════════════
+   Admissions page
+══════════════════════════════════════════════════════════════ */
+.admissions-page .section {
+  padding: 60px 0;
+}
+.admissions-hero {
+  position: relative;
+  padding: 52px 0 28px;
+}
+.admissions-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(39,194,255,0.10), transparent 0 18%),
+    radial-gradient(circle at 88% 18%, rgba(29,78,216,0.10), transparent 0 20%);
+}
+.admissions-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 24px;
+  align-items: stretch;
+}
+.admissions-intro {
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(247,250,255,0.98));
+  border: 1px solid rgba(17,41,76,0.08);
+}
+.admissions-side-panel {
+  min-height: 100%;
+}
+.admissions-timeline {
+  gap: 18px;
+}
+.admissions-step-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+.admissions-docs-card,
+.admissions-help-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+/* ══════════════════════════════════════════════════════════════
    Contact page
 ══════════════════════════════════════════════════════════════ */
 .contact-page .section {
@@ -1523,17 +1568,26 @@ h1, h2 { font-family: var(--font-display); }
 }
 .about-value-card {
   position: relative;
-  padding-top: 54px;
+  padding-top: 28px;
+}
+.academics-highlight-card {
+  padding-top: 28px;
 }
 .about-value-dot {
-  position: absolute;
-  top: 22px;
-  left: 24px;
-  width: 14px;
-  height: 14px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 16px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--blue), var(--cyan));
-  box-shadow: 0 0 0 8px rgba(39,194,255,0.12);
+  box-shadow: 0 0 0 7px rgba(39,194,255,0.10);
+}
+.about-value-card h3,
+.academics-highlight-card h3 {
+  line-height: 1.28;
 }
 .team-grid {
   margin-top: 8px;
@@ -2897,6 +2951,7 @@ body {
   .hero-grid           { grid-template-columns: 1fr; gap: 24px; }
   .stages-grid         { grid-template-columns: 1fr; }
   .subpage-grid        { grid-template-columns: 1fr; }
+  .admissions-hero-grid { grid-template-columns: 1fr; }
   .contact-hero-grid   { grid-template-columns: 1fr; }
   .contact-mini-grid   { grid-template-columns: 1fr 1fr; }
   .contact-grid        { grid-template-columns: 1fr; }
