@@ -227,6 +227,19 @@ h1, h2 { font-family: var(--font-display); }
   overflow: hidden;
   background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 40%, #f5f9ff 100%);
 }
+/* Floating education icons layer */
+.hero-float-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-float-icon {
+  position: absolute;
+  will-change: transform;
+  transition: transform 0.08s linear;
+  user-select: none;
+}
 .hero-section::before,
 .hero-section::after {
   content: "";

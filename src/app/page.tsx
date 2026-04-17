@@ -4,6 +4,7 @@ import FiveCs from "./components/FiveCs";
 import ApplyButton from "./components/ApplyButton";
 import TestimonialsCarousel from "./components/TestimonialsCarousel";
 import ScrollReveal from "./components/ScrollReveal";
+import HeroFloatingIcons from "./components/HeroFloatingIcons";
 
 const trustSignals = [
   { value: "CBSE", label: "Board Affiliated", note: "Aff. No: 3630314" },
@@ -249,11 +250,12 @@ export default function HomePage() {
 
       {/* ── HERO ──────────────────────────────────────────────── */}
       <section className="hero-section" aria-label="Hero">
+        <HeroFloatingIcons />
         <div className="container hero-grid">
 
           {/* Left copy */}
           <div className="hero-copy">
-            <span className="eyebrow">CBSE School · Attapur, Hyderabad</span>
+            <span className="eyebrow">Best CBSE School · Attapur, Hyderabad</span>
             <h1>Hyderabad's Premier CBSE School — Shaping Confident Global Citizens</h1>
             <p>
               OLIVEMOUNT Global School, Attapur — one of Hyderabad's most trusted CBSE schools,
