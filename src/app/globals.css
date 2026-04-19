@@ -1,3 +1,26 @@
+/* Floating WhatsApp button styles */
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  background: #25D366;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
+}
+.whatsapp-float-btn:hover,
+.whatsapp-float-btn:focus {
+  box-shadow: 0 4px 18px rgba(37,211,102,0.25);
+  outline: none;
+}
 /* ══════════════════════════════════════════════════════════════
    Design Tokens
 ══════════════════════════════════════════════════════════════ */

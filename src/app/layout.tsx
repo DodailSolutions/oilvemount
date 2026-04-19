@@ -7,6 +7,7 @@ import BottomNav from "./components/BottomNav";
 import AdmissionModal from "./components/AdmissionModal";
 import ApplyButton from "./components/ApplyButton";
 import PWARegister from "./components/PWARegister";
+import WhatsAppButton from "./components/WhatsAppButton";
 import "./globals.css";
 
 const inter = Inter({
@@ -123,7 +124,11 @@ export default function RootLayout({
             </div>
           </header>
 
+
           <main>{children}</main>
+
+          {/* Floating WhatsApp button sitewide */}
+          <WhatsAppButton />
 
           {/* Mobile bottom nav — hidden on desktop via CSS */}
           <BottomNav />
