@@ -1,0 +1,24 @@
+# Olivemount Global School Website Rebuild
+
+- `[/]` **Phase 1: Project Initialization**
+  - `[ ]` Run `npx create-next-app --help` to determine non-interactive arguments.
+  - `[ ]` Initialize a new Next.js project using Vanilla CSS (no Tailwind) in the `Olivemount` directory.
+  - `[ ]` Set up project structure (components, pages, styles, public assets).
+  - `[ ]` Copy logo files into `public/` directory.
+- `[ ]` **Phase 2: Core Layout & Navigation**
+  - `[ ]` Build layout wrapper (`app/layout.tsx` or `layout.jsx`).
+  - `[ ]` Create the global sticky Navigation Bar.
+  - `[ ]` Create the global Footer.
+- `[ ]` **Phase 3: Pages Development**
+  - `[ ]` Build Home Page (`/`).
+  - `[ ]` Build About Us Page (`/about`).
+  - `[ ]` Build Academics Page (`/academics`).
+  - `[ ]` Build Admissions Page (`/admissions`).
+  - `[ ]` Build Contact Us Page (`/contact`).
+- `[ ]` **Phase 4: Styling & Polish**
+  - `[ ]` Implement premium visual aesthetics (fonts, colors, spacing).
+  - `[ ]` Create and test micro-animations and hover states.
+- `[ ]` **Phase 5: Verification**
+  - `[ ]` Verify responsiveness on standard viewpoints.
+  - `[ ]` Ensure local build compiles without errors.
+  - `[ ]` Create a final Walkthrough artifact.
