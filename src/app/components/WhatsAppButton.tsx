@@ -5,6 +5,7 @@ const WHATSAPP_NUMBER = "+917998877669";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export default function WhatsAppButton() {
+  console.log("WhatsAppButton rendered");
   return (
     <a
       href={WHATSAPP_LINK}
@@ -16,7 +17,7 @@ export default function WhatsAppButton() {
         position: "fixed",
         bottom: "24px",
         right: "24px",
-        zIndex: 50,
+        zIndex: 9999, // Raised for debug
         background: "#25D366",
         borderRadius: "50%",
         width: 56,
@@ -28,6 +29,7 @@ export default function WhatsAppButton() {
         color: "#fff",
         textDecoration: "none",
         transition: "box-shadow 0.2s",
+        border: "2px solid red", // Debug border
       }}
     >
       <svg
